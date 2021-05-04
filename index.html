@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="functions.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <title>Welcome</title>
+    <body>
+        <div id="main">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div>
+                    <div class="loginInput">
+                        <label for="username">Username</label> 
+                        <input id="username" type="text">
+                        <br>
+                        <div class="error-message">
+                            <span id="login-error"></span>
+                        </div>
+                    </div>
+                    <div class="loginButtons">
+                        <button type="button" onclick="checkLogin()">Login</button>
+                        <button type="button" onclick="window.location.href='register.html'">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

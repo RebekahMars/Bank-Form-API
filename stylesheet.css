@@ -1,0 +1,119 @@
+html {
+    background: url(bank.background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+div.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.loginInput {
+    padding-top: 100px;
+}
+
+#register-form {
+    display: flex; 
+    flex-direction: column; 
+    /*border: 2px solid indigo;*/
+  }
+.formInputContainer {
+    display: flex;
+    flex-direction: column; 
+    width: fit-content; 
+    align-self: center; 
+  } 
+/*.inputName {
+    border: 2px solid violet;
+}*/
+.inputBody {
+    /*border: 2px solid green;*/
+    display: flex;
+}
+div.register {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"] {
+    align-content: center;
+    width: 300px;
+}
+input[type="number"]{
+    width: 300px;
+}
+input[type="datetime-local"]{
+    width: 300px;
+}
+label {
+    margin-right: 10px;
+}
+select{
+    width: 300px;
+    height: 25px;
+}
+#username {
+    height: 25px;
+    border-radius: 5px;
+}
+table {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border-style: 1px solid;
+    border: black solid;
+}
+table:hover{
+    cursor: pointer;
+}
+.error-message{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.modal {
+    background-color:rgb(214, 174, 188);
+    position: absolute;
+    flex-direction: column;  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    max-width: 100%;
+    overflow: auto;
+}
+#newTransactionForm{
+    text-align: center;
+    align-items: center;
+}
+button {
+    border-radius: 20px;
+    background-color:lavender;
+    padding: 20px;
+    width: 200px;
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: plum;
+}

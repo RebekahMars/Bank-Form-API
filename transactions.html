@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="functions.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <title>Transactions</title>
+    <body onload="populateTransactionTable()">
+        <div id="transactions">
+            <h1>Transactions</h1>
+            <h2 id="welcome"></h2>
+            <h3 id="userBalance"></h3>
+            <div>
+                <table id="transactions-table">
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Total</th>
+                        </tr>
+                </table>
+            </div>
+            <div>
+                <button type="button" onclick="createNewTransaction()">New Transaction</button>
+                <button type="button" onclick="deleteTransaction()">Delete Transaction</button>
+                <button type="button" onclick="deleteUser()">Delete User</button>
+                <button type="button" onclick="window.location.href='index.html'">Log-Out</button>
+            </div>
+        </div>
+        <div id="transactionModal" class="modal">
+            <h1>Add Transaction</h1>
+            <form id="newTransactionForm">
+                <div>
+                    <label for="dateEntry">Date</label>
+                    <input id="dateEntry" type="datetime-local" onkeydown="return false">
+                    <div class="error-message">
+                        <span id="add-date-error"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="addDescriptionEntry">Description</label>
+                    <input id="addDescriptionEntry" type="text">
+                    <div class="error-message">
+                        <span id="add-description-error"></span>
+                    </div>
+                </div>
+                <div>
+                    <label for="addBalanceEntry">Transaction Total</label>
+                    <input id="addBalanceEntry" type="number" min=0 step="any">
+                    <div class="error-message">
+                        <span id="add-balance-error"></span>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick=submitNewTransaction()>Submit Transaction</button>
+                    <button type="button" onclick="cancelTransaction()">Cancel Transaction</button>
+                </div>
+                <div>
+            </form>
+        </div>
+    </body>
+</html>

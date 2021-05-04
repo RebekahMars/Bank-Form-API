@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="functions.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <title>Register</title>
+    <h1>Register New User</h1>
+    <div id="register">
+        <form id="register-form">
+            <div class="formInputContainer">
+            <div class="register">
+                <label class="inputName" for="usernameEntry">Username</label>
+                <input class="inputBody" id="usernameEntry" type="text">
+            </div>
+            <div class="error-message">
+                <span id="user-error"></span>
+            </div>
+            <div class="register">
+                <label class="inputName" for="currencyEntry">Currency</label>
+                <select class="inputBody" id="currencyEntry">
+                    <option>$</option>
+                    <option>€</option>
+                </select>
+            </div>
+            <div class="error-message">
+                <span id="currency-error"></span>
+            </div>
+            <div class="register">
+                <label class="inputName" for="descriptionEntry">Description</label>
+                <input class="inputBody" id="descriptionEntry" type="text">
+            </div>
+            <div class="error-message">
+                <span id="description-error"></span>
+            </div>
+            <div class="register">
+                <label class="inputName" for="balanceEntry">Balance</label>
+                <input class="inputBody" id="balanceEntry" type="number" min=50 step="any">
+            </div>
+            <div class="error-message">
+                <span id="balance-error"></span>
+            </div>
+            <div>
+                <button type="button" id="submitRegister" onclick="checkRegister()">Register</button>
+                <button type="button" onclick="window.location.href='index.html'">Cancel Register</button>
+            </div>
+        </form>
+    </div>
+</html>
